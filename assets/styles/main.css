@@ -1,0 +1,171 @@
+body {
+	margin: 0;
+	padding: 1em 0 5em 0;
+	background: linear-gradient(rgb(255, 255, 255) 25%, rgb(52, 50, 50));
+}
+header {
+	display: flex;
+	flex-direction: column;
+}
+header a {
+	text-decoration: none;
+}
+header ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+#main-navstrip {
+	display: flex;
+	flex-direction: column;
+}
+#primary-nav li:not(:first-child) {
+	border-left: 2px solid lightgray;
+}
+#primary-nav li:last-child {
+	padding-right: 0;
+}
+#primary-nav li {
+	padding: 0 1em;
+}
+#cart-actions {
+	display: flex;
+	align-items: center;
+}
+#cart-actions::before {
+	content: url("../images/icon_cart.png");
+}
+.main-padding {
+	padding-left: 200px;
+	padding-right: 200px;
+}
+.main-margin {
+	margin-left: 200px;
+	margin-right: 200px;
+}
+#cart-actions,
+#user-login {
+	display: flex;
+	gap: 0.5em;
+}
+#primary-nav {
+	font-size: small;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#site-nav-container {
+	display: flex;
+	flex-direction: column;
+	background-color: lightgray;
+	padding: 0.15em 0;
+}
+#site-nav {
+	display: flex;
+	font-size: small;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 1px solid whitesmoke;
+	border-bottom: 1px solid whitesmoke;
+}
+#site-nav a {
+	color: inherit;
+	padding: 0.75em 1.5em;
+}
+#site-nav li:first-child a {
+	padding-left: 0;
+}
+#site-nav ul {
+	margin: 0;
+}
+#site-nav li {
+	display: flex;
+}
+#site-nav li:not(:first-child) {
+	border-left: 1px solid whitesmoke;
+}
+#nav-site-search input {
+	font-family: inherit;
+	font-size: 9pt;
+	width: 15em;
+}
+#nav-site-search button {
+	font-family: inherit;
+	font-size: 8pt;
+	text-transform: uppercase;
+}
+#promotional-strip {
+	font-size: small;
+	border-bottom: solid 2px lightgray;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#promotional-strip ul {
+	display: flex;
+	align-items: center;
+	padding: 1.5em 0;
+}
+#promotional-strip li {
+	display: flex;
+	align-items: center;
+}
+#promotional-strip li:not(:first-child)::before {
+	content: "\025CB";
+	font-size: xx-small;
+	margin: 0 1em;
+}
+#promotional-strip span a {
+	display: flex;
+	align-items: center;
+	align-content: center;
+}
+footer {
+	color: rgb(150, 150, 150);
+	display: flex;
+	justify-content: space-between;
+	padding-top: 0.5em;
+}
+#footer-nav {
+	font-size: 9pt;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+}
+#footer-navstrip {
+	margin: 0;
+	list-style: none;
+	padding-left: 0;
+	display: flex;
+}
+#footer-navstrip li:not(:first-child) {
+	border-left: solid 1px rgb(150, 150, 150);
+}
+#footer-navstrip a {
+	padding: 0 1em;
+	color: inherit;
+}
+#footer-help a {
+	color: inherit;
+}
+#footer-navstrip li:first-child a {
+	margin-left: 0;
+	padding-left: 0;
+}
+#footer-signup {
+	font-size: 9pt;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+}
+#footer-signup .input-container input {
+	font-family: inherit;
+	font-size: 9pt;
+	width: 15em;
+}
+#footer-signup .input-container button {
+	font-family: inherit;
+	font-size: 8pt;
+	text-transform: uppercase;
+}

@@ -1,0 +1,109 @@
+main {
+	display: flex;
+	flex-direction: column;
+}
+.dressing-ideas-container {
+	background: radial-gradient(rgb(60, 59, 57), rgb(40, 40, 40));
+	border: 8px solid white;
+	padding: 10px;
+}
+#table-dressing {
+	display: flex;
+}
+#table-dressing img {
+	border: 8px solid white;
+	border-right: none;
+	object-fit: cover;
+}
+#dressing-ideas {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid rgb(90, 89, 87);
+	padding: 2em;
+}
+#dressing-ideas h1 {
+	color: rgb(240, 240, 240);
+	font-weight: 400;
+}
+#dressing-ideas p {
+	color: rgb(175, 175, 175);
+	font-size: 11pt;
+	line-height: 200%;
+}
+#dressing-ideas li a {
+	color: inherit;
+	text-decoration: none;
+	padding: 0.5em 1em;
+}
+#dressing-ideas ul {
+	color: rgb(240, 240, 240);
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+#dressing-ideas ul li:not(:first-child) {
+	border-top: solid 1px rgb(90, 89, 87);
+}
+#dressing-ideas ul li {
+	display: flex;
+}
+.more-info {
+	font-size: 10pt;
+	text-transform: capitalize;
+	text-decoration: underline;
+	color: rgb(160, 160, 160);
+	padding-left: 1em;
+}
+#promotional-showcase {
+	display: flex;
+	border: solid 8px rgb(40, 40, 40);
+	background-color: white;
+}
+.showcase-item {
+	display: flex;
+	flex-direction: column;
+	padding: 0.5em 0 4em 2em;
+	height: fit-content;
+}
+.showcase-item h1 {
+	color: rgb(70, 70, 70);
+	margin: 0.5em 0;
+	font-size: 12pt;
+	font-weight: 400;
+}
+.showcase-item p {
+	color: rgb(100, 100, 100);
+	font-size: 9pt;
+	margin: 0;
+}
+.showcase-item a {
+	margin: 1em 0;
+	text-decoration: none;
+	font-size: 10pt;
+	color: rgb(100, 100, 100);
+}
+.showcase-item.item-1 {
+	background-image: url("../images/promo_glass.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left;
+}
+.showcase-item.item-1 a {
+	align-self: flex-end;
+}
+.showcase-item.item-2 {
+	background-image: url("../images/promo_plates.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left;
+}
+.showcase-item.item-2 a {
+	align-self: flex-end;
+}
+.showcase-item.item-3 {
+	background-image: url("../images/promo_album.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left;
+}
