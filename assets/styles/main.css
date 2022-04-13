@@ -22,6 +22,12 @@ header ul {
 	display: flex;
 	flex-direction: column;
 }
+#primary-nav {
+	color: rgb(25, 25, 25);
+}
+#primary-nav a {
+	color: rgb(75, 75, 100);
+}
 #primary-nav li:not(:first-child) {
 	border-left: 2px solid lightgray;
 }
@@ -103,6 +109,9 @@ header ul {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+#promotional-strip a {
+	color: rgb(75, 75, 120);
 }
 #promotional-strip ul {
 	display: flex;
