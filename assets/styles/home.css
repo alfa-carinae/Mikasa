@@ -59,12 +59,21 @@ main {
 	display: flex;
 	border: solid 8px rgb(40, 40, 40);
 	background-color: white;
+	justify-content: space-between;
 }
 .showcase-item {
 	display: flex;
 	flex-direction: column;
+	flex-basis: content;
 	padding: 0.5em 0 4em 2em;
-	height: fit-content;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+}
+.divider {
+	width: 0.05em;
+	margin: 0.75em 0.5em;
+	background-color: rgb(175, 175, 175);
 }
 .showcase-item h1 {
 	color: rgb(70, 70, 70);
@@ -85,25 +94,16 @@ main {
 }
 .showcase-item.item-1 {
 	background-image: url("../images/promo_glass.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: left;
 }
 .showcase-item.item-1 a {
 	align-self: flex-end;
 }
 .showcase-item.item-2 {
 	background-image: url("../images/promo_plates.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: left;
 }
 .showcase-item.item-2 a {
 	align-self: flex-end;
 }
 .showcase-item.item-3 {
 	background-image: url("../images/promo_album.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: left;
 }
